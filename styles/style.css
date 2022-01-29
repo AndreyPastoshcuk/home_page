@@ -20,7 +20,7 @@ ul {
   padding: 4px 0;
 }
 
-.header__container {
+.container {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -28,23 +28,27 @@ ul {
   align-items: center;
 }
 
-.header__nav {
+.navigation {
   display: flex;
 }
 
-.header__item {
+.navigation__item {
   padding-left: 16px;
 }
-.header__item:first-of-type {
+.navigation__item:first-of-type {
   padding-left: 0;
   font-weight: 500;
 }
 
-.header__link {
+.navigation__link {
   font-size: 16px;
   line-height: 34px;
   color: #fff;
   text-decoration: none;
+}
+
+.navigation__link--bolt {
+  font-weight: 600;
 }
 
 .header__logo {
@@ -55,6 +59,7 @@ ul {
 }
 
 .header__input {
+  margin-top: 7px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   background-color: transparent;
   color: white;
@@ -63,13 +68,214 @@ ul {
   margin-right: 16px;
 }
 
+.header__input::placeholder {
+  color: #fff;
+}
+
 .header__button {
   background-color: #fff;
   color: #db7093;
   border-radius: 8px;
-  border-color: #fff;
+  border: none;
+}
+
+.header__button__text {
   font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+  color: #db7093;
 }
 /* products */
 
+.container--products {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 105px;
+  padding-right: 105px;
+  flex-direction: column;
+}
+
+.products__title {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #4a4a4a;
+  margin: 41px 0;
+}
+
+.products__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.products__card {
+  display: flex;
+  gap: 45px;
+}
+
+.products__card:last-of-type {
+  margin-bottom: 28px;
+}
+
+.products__img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.products__text-block--rev {
+  text-align: right;
+}
+
+.products__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #4a4a4a;
+}
+
+.products__paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #717171;
+}
+
+.products__button {
+  border: 2px solid #db7093;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #db7093;
+  font-size: 16px;
+  line-height: 34px;
+  background-color: #fff;
+}
+
+.products__link {
+  padding-left: 14px;
+  color: #db7093;
+  font-size: 16px;
+  line-height: 34px;
+}
+
+.products__button--div {
+  align-items: center;
+  align-self: center;
+}
+
+.products__button-link {
+  background-color: #db7093;
+  border: none;
+  border-radius: 8px;
+  padding: 0 27px;
+}
+
+.products__link-button {
+  font-size: 16px;
+  line-height: 34px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container--forms {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forms__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.form__input {
+  width: 400px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  font-size: 16px;
+  line-height: 34px;
+  color: #717171;
+}
+.form__input::placeholder {
+  color: #717171;
+}
+
+.form__input--textarea {
+  height: 113px;
+  resize: none;
+}
+
+.forms__button {
+  background-color: #db7093;
+  border: none;
+  border-radius: 8px;
+}
+
+.forms__button--text {
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
 /* footer */
+
+.footer {
+  background-color: #f3f3f3;
+}
+
+.footer__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__basic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coopyright {
+  font-size: 14px;
+  line-height: 32px;
+  color: #db7093;
+  margin: 0;
+}
+
+.footer__navigation__link {
+  font-size: 16px;
+  line-height: 34px;
+  color: #4a4a4a;
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__button {
+  border: none;
+  background-color: transparent;
+  border: 2px solid #db7093;
+  border-radius: 8px;
+  margin-bottom: 26px;
+}
+
+.footer__button__link {
+  text-decoration: none;
+  color: #db7093;
+  font-size: 16px;
+  line-height: 34px;
+  padding: 0 12px;
+}
