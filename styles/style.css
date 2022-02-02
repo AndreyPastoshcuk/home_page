@@ -253,7 +253,7 @@ ul {
   margin: 0;
 }
 
-.footer__navigation__link {
+.navigation__footer .navigation__link {
   font-size: 16px;
   line-height: 34px;
   color: #4a4a4a;
@@ -272,7 +272,7 @@ ul {
   margin-bottom: 26px;
 }
 
-.footer__button__link {
+.footer__button-link {
   text-decoration: none;
   color: #db7093;
   font-size: 16px;
